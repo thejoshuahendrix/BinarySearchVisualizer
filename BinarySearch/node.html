@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="nodestyle.css"></style>
+    
+<body>
+    <div class="center">
+            <h2>This grid represents an array of integers 1-100<br>
+            Enter a number 1-100 to visualize a binary search!<br></h2>
+            
+            <form>
+         <input type="text" id="target"></input><br><br>
+        <button type="button" onclick="binarySearchCall()">Calculate</button>
+        <button type="button" onclick="Clear()">Clear</button><br>
+        <div id='answer'><br>Answer:</div>
+    </form>
+    </div>
+<div id="grid">
+</div>
+<div class ="center">
+<div class="legend">
+    <div class="node" style="background-color: #838718;"><</div><br> This signifies the target is less than the current node
+    <br><br><div class="node" style="background-color: #590c0c;">></div> <br>This signifies the target is greater than the current node
+    <br><br><div class="node" style="background-color: #4CAF50;">#</div> <br>This is the answer 
+    <br><br><br>LEGEND</div></div>
+</body>
+<script src="binarysearchtree.js"></script>
+</html>
