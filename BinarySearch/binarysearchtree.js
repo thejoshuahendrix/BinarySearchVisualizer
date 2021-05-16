@@ -6,7 +6,7 @@ for(let i=1;i<101;i++)
 }
 numbers.forEach((number, index) =>{
 
-    document.getElementById('grid').innerHTML +="<div class ='node' id='node"+number+"'>"+number+"</div>"
+    document.getElementById('grid').innerHTML +=`<div class ='node' id='node${number}'>${number}</div>`
 })
 function binarySearchCall(){
     Clear();
