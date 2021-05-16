@@ -6,25 +6,21 @@ for(let i=1;i<101;i++)
 }
 numbers.forEach((number, index) =>{
 
-    document.getElementById('grid').innerHTML +="<div class ='node' id='node"+number+"'>"+number+"</div>";
-
+    document.getElementById('grid').innerHTML +="<div class ='node' id='node"+number+"'>"+number+"</div>"
 })
 function binarySearchCall(){
     Clear();
     const targetnum = document.getElementById('target').value;
     binarySearch(numbers,targetnum);
-    
 }
 function Clear(){
     document.getElementById('grid').innerHTML = "";
     document.getElementById('answer').innerHTML ="<br>Answer: ";
     numbers.forEach((number, index) =>{
 
-        document.getElementById('grid').innerHTML +="<div class ='node' id='node"+number+"'>"+number+"</div>";
+        document.getElementById('grid').innerHTML +=`<div class ='node' id='node${number}'>${number}</div>`;
     
     })}
-
-    
 function binarySearch(array, target, min, max) {
     //This is designed for a sorted array of 100 integers 1-100
     //creating an array with something like
@@ -51,7 +47,6 @@ function binarySearch(array, target, min, max) {
     }
 	else if(mid > target){
         return setTimeout(function(){binarySearch(array, target, min, mid - 1)},1000);
-
     }  
 }
 
