@@ -1,5 +1,5 @@
 
-var numbers =[];
+let numbers =[];
 for(let i=1;i<101;i++)
 {
     numbers.push(i);
@@ -29,8 +29,8 @@ function binarySearch(array, target, min, max) {
 	if (min === undefined) min = 1;
 	if (max === undefined) max = array.length;
 
-    var mid = Math.floor(((max - min) / 2) + min);
-    var elem = document.getElementById("node"+mid.toString());
+    let mid = Math.floor(((max - min) / 2) + min);
+    let elem = document.getElementById("node"+mid.toString());
     elem.style.backgroundColor ="#838718";
     elem.innerHTML="<"
     if(mid == target)
